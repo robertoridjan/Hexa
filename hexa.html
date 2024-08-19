@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  
+  <div class="main_wrapper">
+    <div class="left_row">
+      <img src="img/profile.jpg" alt="" class="profile">
+      <p id="username"></p>
+      <p id="email"></p>
+      <button id="editAccount">Edit</button>
+      <button id="logout">Log out</button>
+    </div>
+
+    <div class="right_row">
+      <form id="postForm">
+        <textarea id="postContent" placeholder="What is happening?!"></textarea>
+        <button>Post</button>
+      </form>
+
+      <div class="allPostsWrapper"></div>
+    </div>
+  </div>
+
+  <div class="custom_modal">
+    <button id="closeModal">X</button>
+
+    <form id="editForm">
+      <h2>Edit profile</h2>
+
+      <div>
+        <input id="korisniko_ime" type="text" name="korisniko_ime" placeholder="korisniko_ime">
+      </div>
+
+      <div>
+        <input id="edit_email" type="text" name="register_email" placeholder="email">
+      </div>
+
+      <div>
+        <button>Save</button>
+      </div>
+      
+      <button id="deleteProfile">Obrisi Profil</button>
+    </form>
+  </div>
+
+  <script src="js/Session.js"></script>
+  <script src="js/User.js"></script>
+  <script src="js/Post.js"></script>
+  <script src="js/hexa.js"></script>
+</body>
+</html>
